@@ -49,6 +49,9 @@ listaDeNumeros.push(939);
 console.log(listaDeNumeros);
 console.log(listaDeNumeros.length);
 
+listaDeNumeros.pop();
+console.log(listaDeNumeros);
+console.log(listaDeNumeros.length)
 
 let listaDePalabras = ["Explorer", "MisionComander", "LaunchX", "Innovaccion"];
 console.log(listaDePalabras);
