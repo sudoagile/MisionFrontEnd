@@ -3,34 +3,41 @@ También se pueden declarar con la palabra reservada "let" y estas serán usadas
 Igualmente está la declaración con la palabra reservada "const" y se usarán cuando el valor no cambie */
 console.log("\n************* Variables **************\n");
 var numero1 = 4;
-var numero2 = 6;
-console.log("Número 1: " + numero1 + " Numero 2: " + numero2);
+let numero2 = 6; 
+const numero3 = 0;
+console.log("Número 1: " + numero1 + " Numero 2: " + numero2 + " Numero 3: "+numero3);
 
 /*Las cadenas (Strings) son caracteres que pueden ser una frase o palabra y estas pueden darse con comillas dobles "", simples '' o invertidas ``
-la diferencia es que con las invertidas podemos agregar variables dentro de la cadena con la sintaxis ${}
+la diferencia es que con las invertidas podemos agregar variables dentro de la cadena con la sintaxis ${} */
 console.log("\n************* Cadenas **************\n");
 var frase1 = "Ejemplo comillas dobles";
-var frase2 = 'Ejemplo comillas simples';
-var frase3 = `Ejemplo comillas ${frase1} invertidas`;
+let frase2 = 'Ejemplo comillas simples';
+var frase3 = `Ejemplo comillas ${numero1} invertidas`;
 
 console.log(frase1 + "\n" + frase2 + "\n" + frase3);
 
-/* Las condicionales se pueden usar valores como > < = == === != y cada una tiene una funcionalidad de comparación entre elementos 
+/* Las condicionales se pueden usar valores como > < == === != y cada una tiene una funcionalidad de comparación entre elementos */
 console.log("\n************* Condicionales **************\n");
 
+console.log(numero1 === numero1);
 console.log(numero1 != numero2);
+console.log(numero1 > numero2);
 
 /*Los operadores lógicos se utilizan cuando se necesita comparar más de una condicional
 El operador && (AND) necesita que todos sus valores sean true para que la salida sea true
-El operador || (OR) necesita que solo uno de sus valores sea true para que la salida sea true
+El operador || (OR) necesita que solo uno de sus valores sea true para que la salida sea true */
 console.log("\n************* Operador lógico AND **************\n");
 console.log(true && true);
+console.log(true && false && true) || true;
+console.log(numero1 === numero1 && numero1 < numero2)
 
 console.log("\n************* Operador lógico OR **************\n");
 console.log(false || false);
+console.log(false || true || (false && true));
+console.log(numero2 > numero1 || numero3 != numero3)
 
 
-/* Los arreglos son estructuras de datos que nos permiten agrupar datos de un mismo tipo 
+/* Los arreglos son estructuras de datos que nos permiten agrupar datos de un mismo tipo */
 console.log("\n************* Arreglos **************\n");
 let listaDeNumeros = [2, 3, 5, 7, 11, 234];
 
@@ -132,5 +139,4 @@ switch (prompt("¿Cómo está el clima?")) {
     console.log("No se como está el clima");
     break;
 }
-console.log("Aquí salimos del Switch");
-
+console.log("Aquí salimos del Switch"); */
