@@ -53,7 +53,7 @@ listaDeNumeros.pop();
 console.log(listaDeNumeros);
 console.log(listaDeNumeros.length)
 
-let listaDePalabras = ["Explorer", "MisionComander", "LaunchX", "Innovaccion"];
+let listaDePalabras = ["Explorer", "MisionComander", "LaunchX", "Innovaccion", "Java"];
 console.log(listaDePalabras);
 console.log(listaDePalabras.length);
 
