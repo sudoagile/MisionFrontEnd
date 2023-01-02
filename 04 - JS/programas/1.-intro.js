@@ -23,6 +23,12 @@ console.log(numero1 === numero1);
 console.log(numero1 != numero2);
 console.log(numero1 > numero2);
 
+let num1 = 1;
+let num11 = "1";
+
+console.log("condicion ==", num1 == num11);
+console.log("condicion ===", num1 === num11);
+
 /*Los operadores lógicos se utilizan cuando se necesita comparar más de una condicional
 El operador && (AND) necesita que todos sus valores sean true para que la salida sea true
 El operador || (OR) necesita que solo uno de sus valores sea true para que la salida sea true */
@@ -57,14 +63,14 @@ let listaDePalabras = ["Explorer", "MisionComander", "LaunchX", "Innovaccion", "
 console.log(listaDePalabras);
 console.log(listaDePalabras.length);
 
-/* Las cadenas (strings) pueden ser tratadas como arreglos 
+/* Las cadenas (strings) pueden ser tratadas como arreglos */
 let palabra = "Explorer";
 console.log(palabra[2]);
 console.log(palabra.length);
 
 
 /* Los objetos son estructuras de datos que nos permiten agrupar datos de un diferentes tipos 
-console.log("\n************* Objetos **************\n");
+console.log("\n************* Objetos **************\n");*/
 
 let explorer = {
     nombre: "Nombre del Explorer",
@@ -75,23 +81,28 @@ let explorer = {
     proPer: {
         escolar: "Tareas",
         profesional: "Trabajo",
-        personal: "Negocio"
+        personal: "Negocio",
+        cuantos: 3,
     }
 };
 
 console.log(explorer);
+console.log(explorer.numReg);
 
 console.log(explorer.proPer.escolar);
+console.log(
+  "Proyectos: "+ explorer.proPer.cuantos + " " +explorer.proPer.escolar
+);
+console.log(explorer.proyectos[2]);
 
-
-/* Flujo condicional 
+/* Flujo condicional */
 let number1 = 2;
 let number2 = 6;
 console.log("\n************* if / else **************\n");
-if (number1 > number2 && number2 > 5) {
+if (number1 > number2) {
   console.log("El número 1 es mayor que número 2");
 }
-else if( number1 == number2 || number1 < 3){
+else if( number1 == number2){
   console.log("Los números son iguales");
 }
 else {
