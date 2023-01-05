@@ -96,10 +96,10 @@ console.log(
 console.log(explorer.proyectos[2]);
 
 /* Flujo condicional */
-let number1 = 2;
+let number1 = 7;
 let number2 = 6;
 console.log("\n************* if / else **************\n");
-if (number1 > number2) {
+if (number1 > number2 || number1 > 8) {
   console.log("El número 1 es mayor que número 2");
 }
 else if( number1 == number2){
@@ -109,7 +109,7 @@ else {
   console.log("El número 2 es mayor que número 1");
 }
 
-/* Ciclo condicional 
+/* Ciclo condicional */
 console.log("\n************* While **************\n");
 let numberWhile = 5;
 while (numberWhile <= 12) {
@@ -118,9 +118,9 @@ while (numberWhile <= 12) {
 }
 console.log("Aquí ya salió del while " + numberWhile);
 
-/* Ciclo condicional de una iteración mínimo 
+/* Ciclo condicional de una iteración mínimo */
 console.log("\n************* Do While **************\n");
-let numeroDoWhile = 22;
+let numeroDoWhile = 12;
 do {
     numeroDoWhile = numeroDoWhile + 2;
     console.log(numeroDoWhile);
@@ -128,7 +128,7 @@ do {
 console.log("Aquí sale del Do While " + numeroDoWhile);
 
 
-/* Ciclo for con iteración controlada 
+/* Ciclo for con iteración controlada */
 console.log("\n************* For **************\n");
 let numeroFor = 0
 for (numeroFor ; numeroFor <= 12; numeroFor = numeroFor + 1) {
@@ -137,7 +137,7 @@ for (numeroFor ; numeroFor <= 12; numeroFor = numeroFor + 1) {
 console.log("Aquí salimos del for " + numeroFor);
 
 /*
-/* Opciones para evitar anidar condicionales 
+/* Opciones para evitar anidar condicionales */
 console.log("\n************* Switch **************\n");
 switch (prompt("¿Cómo está el clima?")) {
   case "lluvioso":
@@ -153,4 +153,4 @@ switch (prompt("¿Cómo está el clima?")) {
     console.log("No se como está el clima");
     break;
 }
-console.log("Aquí salimos del Switch"); */
+console.log("Aquí salimos del Switch");
